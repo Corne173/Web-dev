@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RDTek</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hello world</h1>
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button" onclick="page('HOME')">HOME</button>
+      <button class="w3-bar-item w3-button" onclick="page('About Us')">About Us</button>
+      <button class="w3-bar-item w3-button" onclick="page('Contact')">Contact Us</button>
+      <button class="w3-bar-item w3-button" onclick="page('Page 3')">Something</button>
+    </div> 
 
+    <h1><strong>RDTEK</strong></h1>
+
+    <div id="HOME" class="page">
+      <h2>you well?</h2>
+      <p>HOME PAGE GOES BRRRRRRRRRRR</p>
+    </div>
+
+    <div id="About Us" class="page" style="display:none">
+      <h2>About Us</h2>
+      <p>Company Goes BRRRR</p>
+    </div>
+    
+    <div id="Contact" class="page" style="display:none">
+      <h2>Contact Us</h2>
+      <p>Contact the boys your bAby</p>
+    </div>
+    
+    <div id="Page 3" class="page" style="display:none">
+      <h2>Something Cool</h2>
+      <p>Paragraph goes BRRRRRRR</p>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
