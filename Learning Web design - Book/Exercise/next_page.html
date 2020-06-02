@@ -4,24 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Next page</title>
+    <!-- Style sheets can also be imported like this -->
     <style>
-      body {
-        background-color: #ecd6b0;
-        margin: 0 10%;
-        font-family: sans-serif;
-      }
-      h1 {
-        text-align: center;
-        font-family: serif;
-        font-weight: normal;
-        text-transform: uppercase;
-        border-bottom: 1px solid #2d96ca;
-        margin-top: 30px;
-      }
-      h2 {
-        color: #d1633c;
-        font-size: 1em;
-      }
+      @import url(style.css);
     </style>
   </head>
   <body>
@@ -74,5 +59,40 @@
 
     <time>2016-06-19</time>
     <data value="978-1-449-39319-9">CSS: The Definitive Guide</data>
+    <hr />
+    <h2>Using iframes to display multi media content</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/7GpsJN3P7vE"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p>
+      There are some security concerns with using iframes because they may act
+      like open windows through which hackers can sneak. I recommend the MDN Web
+      Docs article “From object to iframe: Other Embedding Technologies”
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies"
+        >developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/
+        Other_embedding_technologies</a
+      >), which provides a good overview of iframe security issues.
+    </p>
+
+    <h2>Some audio Sir?</h2>
+    <p>Click to play "Point.blank - Gyal Dem"</p>
+    <audio id="whiterabbits" controls preload="auto">
+      <source src="01.Point.blank - Gyal Dem.mp3" type="audio/mp3" />
+      <ul>
+        <li><a href="percussiongun.mp3">MP3</a></li>
+      </ul>
+    </audio>
   </body>
+  <hr />
+  <footer>
+    Click the button to go to CSS land
+    <a href="SomeCSSMagic.html">
+    <button>This button</button>
+  </footer>
 </html>

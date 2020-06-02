@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Absolute Units</h2>
+    <p>
+      Absolute units have predefined meanings or real-world equivalents. They
+      are always the same size, regardless of the context in which they appear.
+      The most popular absolute unit for web design is the pixel, which CSS3
+      defines as 1/96 inch. Pixels are right at home on a pixel-based screen and
+      offer precise control over the size of the text and elements on the page.
+      For a while there, pixels were all we used. Then we realized they are too
+      rigid for pages that need to adapt to a wide variety of screen sizes and
+      user preferences. Relative measurements like rem, em, and % are more
+      appropriate to the fluid nature of the medium.
+    </p>
+
+    <p>
+      As long as we are kicking px to the curb, all of the absolute units—such
+      as pt, pc, in, mm, and cm—are out because they are irrelevant on screens,
+      although they may be useful for print style sheets. That narrows down your
+      unit choices a bit. That said, pixels do still have their place in web
+      design for elements that truly should stay the same size regardless of
+      context. Border widths are appropriate in pixels, as are images that have
+      inherent pixel dimensions.
+    </p>
+
+    <h2>Relative Units</h2>
+    <p>
+      As I just established, relative units are the way to go for most web
+      measurements, and there are a few options: rem, em, and vw/vh. The rem
+      unit CSS3 introduced a relative measurement called a rem (for root em)
+      that is based on the font size of the root (html) element, whatever that
+      happens to be. In modern browsers, the default root font size is 16
+      pixels; therefore, a rem is equivalent to a 16-pixel unit (unless you set
+      it explicitly to another value). An element sized to 10rem would measure
+      160 pixels.
+    </p>
+    <p>
+      For the most part, you can use rem units like an absolute measurement in
+      style rules; however, because it is relative, if the base font size
+      changes, so does the size of a rem. If a user changes the base font size
+      to 24 pixels for easier reading from a distance, or if the page is
+      displayed on a device that has a default font size of 24 pixels, that
+      10rem element becomes 240 pixels. That seems dodgy, but rest assured that
+      it is a feature, not a bug. There are many instances in which you want a
+      layout element to expand should the text size increase. It keeps the page
+      proportional with the font size, which can help maintain optimum line
+      lengths.
+    </p>
+    sdf
+  </body>
+</html>
